@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="icon" type="image/jpg" href="https://ih1.redbubble.net/image.1446881801.4146/st,small,507x507-pad,600x600,f8f8f8.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            transform: scale(1.1);
+            background-color: #ff007b;
+            color: white;
+        }
+        img {
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .language-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4">
+        <nav class="flex flex-wrap justify-center gap-4">
+            <button class="nav-link px-4 py-2 rounded" onclick="openTab('home')">Главная</button>
+            <button class="nav-link px-4 py-2 rounded" onclick="openTab('hobbies')">Топ 10 Аниме</button>
+            <button class="nav-link px-4 py-2 rounded" onclick="openTab('about')">Мои хобби</button>
+            <button class="nav-link px-4 py-2 rounded" onclick="openTab('peripherals')">Устройства</button>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="home" class="tab-content active">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h1 class="text-2xl font-bold mb-4">Главная</h1>
+                    <p class="mb-4">Я Кирилл Прытков, учусь в ЧелГУ на факультете Информационные технологии в группе ПИ-101. Учусь программировать и пытаюсь стать лучшей версией себя.</p>
+                    <p>Это первый раз,когда я пришёл в университет.</p>
+                    <img src="https://sun9-4.userapi.com/s/v1/ig2/BfucwPt1q8KDYGLUOM-srOu6zTY2mA_sXvNO7pMLd5b1GHDzYwKTQ0ELIhWi-pcOYqLbHiXkgWpfuBYnZH1sjBnQ.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280&from=bu&u=PxN2Zi5lQ9sfjY-bGYnGjHle9xu8UKvmc0dLaMzD4oE&cs=720x1280" alt="Моя фотография" class="mt-4 rounded shadow w-96">
+                </div>
+                
+                <div class="md:w-1/3 bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 text-blue-600">Изучаю программирование</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" 
+                                alt="Python" 
+                                class="w-12 h-12 object-contain language-icon">
+                            <div>
+                                <h3 class="font-semibold">Python</h3>
+                                <p class="text-sm text-gray-600">Основной язык программирования</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" 
+                                alt="SQL" 
+                                class="w-12 h-12 object-contain language-icon">
+                            <div>
+                                <h3 class="font-semibold">SQL</h3>
+                                <p class="text-sm text-gray-600">Работа с базами данных</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" 
+                                alt="JavaScript" 
+                                class="w-12 h-12 object-contain language-icon">
+                            <div>
+                                <h3 class="font-semibold">JavaScript</h3>
+                                <p class="text-sm text-gray-600">Основы фронтенд-разработки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="tab-content">
+            <h1 class="text-2xl font-bold mb-4">Топ 10 Аниме по моему мнению</h1>
+            <p class="mb-4">Я не знал о чём рассказать,но любимые аниме могут рассказать  о человеке,поэтому я решил создать свою подборку:</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li>
+                    <img src="https://pic-bstarstatic.akamaized.net/ugc/8fa39cedcb38c0a0d4a47c8b9ef613d58f998916.jpg" alt="Аниме 1" class="rounded shadow">
+                    <p class="mt-2 text-center">1. 7 смертных грехов</p>
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/originals/09/7c/c2/097cc2d1af0cf45abe86516926297066.jpg" alt="Аниме 2" class="rounded shadow">
+                    <p class="mt-2 text-center">2. Чёрный клевер </p>
+                </li>
+                <li>
+                    <img src="https://pic.rutubelist.ru/video/df/59/df59a5c6bfb6d23d49ce2bcff2504fcd.jpg" alt="Аниме 3" class="rounded shadow">
+                    <p class="mt-2 text-center">3. Токийский гуль</p>
+                </li>
+                <li>
+                    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1st2LL.img?w=1200&h=675&m=4&q=89" alt="Аниме 4" class="rounded shadow">
+                    <p class="mt-2 text-center">4. Моя геройская академия</p>
+                </li>
+                <li>
+                    <img src="https://avatars.mds.yandex.net/i?id=3484498cbefdb431a9e94c6b246a31d8_l-5578507-images-thumbs&n=13" alt="Аниме 5" class="rounded shadow">
+                    <p class="mt-2 text-center">5. Хантер x Хантер</p>
+                </li>
+                <li>
+                    <img src="https://polinka.top/uploads/posts/2023-06/1686058799_polinka-top-p-kartinki-anime-magicheskaya-bitva-krasivo-15.jpg" alt="Аниме 6" class="rounded shadow">
+                    <p class="mt-2 text-center">6. Магическая битва</p>
+                </li>
+                <li>
+                    <img src="https://avatars.mds.yandex.net/i?id=1804e79dce0399c7e482badee8efaa8c_l-12632677-images-thumbs&n=13" alt="Аниме 7" class="rounded shadow">
+                    <p class="mt-2 text-center">7. Клинок, рассекающий демонов</p>
+                </li>
+                <li>
+                    <img src="https://avatars.mds.yandex.net/i?id=ff32b36aa988d494c3d889b754c4b455_l-6218602-images-thumbs&n=13" alt="Аниме 8" class="rounded shadow">
+                    <p class="mt-2 text-center">8. Восхождение в тени</p>
+                </li>
+                <li>
+                    <img src="https://avatars.mds.yandex.net/i?id=b1a1155ec869fe0696ba0285fa3cbe41_l-5296855-images-thumbs&n=13" alt="Аниме 9" class="rounded shadow">
+                    <p class="mt-2 text-center">9. Монолог фармацевта</p>
+                </li>
+                <li>
+                    <img src="https://yobte.ru/uploads/posts/2019-11/vanpanchmen-32-foto-28.png" alt="Аниме 10" class="rounded shadow">
+                    <p class="mt-2 text-center">10. Ванпанчмен</p>
+                </li>
+            </ul>
+        </section>
+
+<section id="about" class="tab-content">
+    <h1 class="text-2xl font-bold mb-4">Мои хобби</h1>
+    <p class="mb-4">Я студент ЧелГУ, изучаю информационные технологии. Увлекаюсь программированием, аниме, компьютерными играми и волейболом. Хочу немного рассказать о своих хобби.</p>
+    
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-2">Волейбол</h2>
+        <p class="mb-4">Играю в волейбол с 6 класса, был в школьной команде, занял с ней 12 место на городе. Хочу попасть в команду ЧелГУ.</p>
+        <img src="https://sun9-36.userapi.com/impg/4kdWALLhaqHVXysQ6vvl9o4EbgmmllFKYhxGxQ/hiCaF3mOhXs.jpg?size=2560x2274&quality=95&sign=c996180dd1b3f9cb67a94ed6dd023ca1&type=album" 
+             alt="Волейбол" 
+             class="mt-4 rounded shadow w-full md:w-1/2 lg:w-1/3 mx-auto">
+    </div>
+    
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-2">Киберспорт</h2>
+        <p class="mb-4">Я играю в Dota 2 и CS:GO. Участвовал в региональных турнирах по Dota 2, один из которых даже выиграл!</p>
+        
+        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+            <a href="https://vk.com/wall-224771055_213" target="_blank" class="flex items-center gap-3 hover:underline text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                Ссылка на пост о победе в турнире
+            </a>
+        </div>
+        
+        <img src="https://sun9-80.userapi.com/impg/DvAwpM8YYL02buQOuHb0eyda2a80QG9DpMJI3A/Z4rH_wONxy0.jpg?size=2560x1707&quality=95&sign=44be508e0e7fc33a379c358954f2fb34&type=album" 
+             alt="Турнир по Dota 2" 
+             class="mt-4 rounded shadow w-full md:w-2/3 lg:w-1/2 mx-auto">
+    </div>
+</section>
+
+<section id="peripherals" class="tab-content">
+    <h1 class="text-2xl font-bold mb-6">Мои девайсы</h1>
+    
+    <div class="flex flex-col lg:flex-row gap-8">
+
+        <div class="lg:w-1/2 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Мобильный  девайс для учёбы</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <img src="https://sun9-78.userapi.com/impg/FIkQXUdvJW3IhpFVjWDd4gWwNBeox-76tkoN0w/Cp0TEfT30uA.jpg?size=1620x2160&quality=95&sign=363f16f5aa92712c610c3ba079a6dadb&type=album" 
+                     alt="iPad Air 5 и Apple Pencil" 
+                     class="rounded-lg shadow w-full md:w-1/2 h-auto">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">iPad Air 5 + Apple Pencil</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Использую для всех задач кроме программирования</li>
+                        <li>Идеален для заметок, рисования и потребления контента</li>
+                        <li>Очень удобная и портативная система</li>
+                        <li>Отличная автономность</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-blue-600">Домашний компьютер</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <img src="https://sun9-37.userapi.com/impg/DBtV_mapA608nfKM37UEJv7R8bZ4VrzlNpSysw/yMNMa5ASK-4.jpg?size=1620x2160&quality=95&sign=7e79aeb6a24e84912ecc6dd11e1295c8&type=album" 
+                     alt="Мой компьютер" 
+                     class="rounded-lg shadow w-full md:w-1/2 h-auto">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Игровой/рабочий ПК</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><span class="font-medium">Видеокарта:</span> NVIDIA GTX 1660</li>
+                        <li><span class="font-medium">Процессор:</span> AMD Ryzen 5 1600</li>
+                        <li><span class="font-medium">Оперативная память:</span> 16GB Samsung</li>
+                        <li><span class="font-medium">Накопитель:</span> 1TB SSD Kingston</li>
+                        <li>Идеальный баланс для работы и игр</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

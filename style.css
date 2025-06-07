@@ -1,0 +1,22 @@
+/* Mobile First подход */
+@media (max-width: 640px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Анимация загрузки */
+body:not(.loaded) {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.loaded {
+    opacity: 1;
+}
